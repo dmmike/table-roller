@@ -42,7 +42,6 @@ export class WeightedTable extends Table {
 
     roll() {
         let weightedRoll = Math.ceil(Math.random() * this.totalWeight);
-        console.log(this.title, weightedRoll);
         let result;
         for (let i = 0; !result && i < this.entries.length; i++) {
             if (weightedRoll <= this.entries[i].weight) {
