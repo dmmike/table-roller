@@ -20,7 +20,6 @@ export class SimpleTable extends Table {
 
     roll() {
         let roll = Math.ceil(Math.random() * this.entries.length);
-        console.log(this.title, roll);
         let result = this.entries[roll - 1];
         return result.getValue();
     }
